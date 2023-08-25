@@ -8,7 +8,7 @@ public class Main {
         var f = new FileProperties();
 
         try {
-            f.readFromFile("src/main/java/jp/ne/yonem/pattern/Adapter/A2/file.txt");
+            f.readFromFile(Main.class.getResource("file.txt").getPath());
             f.setValue("year", "2004");
             f.setValue("month", "4");
             f.setValue("day", "21");

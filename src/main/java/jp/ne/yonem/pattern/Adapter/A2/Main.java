@@ -5,7 +5,7 @@ import java.io.*;
 public class Main {
 
     public static void main(String[] args) {
-        FileIO f = new FileProperties();
+        var f = new FileProperties();
 
         try {
             f.readFromFile("src/main/java/jp/ne/yonem/pattern/Adapter/A2/file.txt");

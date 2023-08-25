@@ -14,7 +14,7 @@ public class BookShelfIterator implements Iterator {
     }
 
     public Object next() {
-        Book book = bookShelf.getBookAt(index);
+        var book = bookShelf.getBookAt(index);
         index++;
         return book;
     }

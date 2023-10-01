@@ -4,24 +4,24 @@ import java.util.ArrayList;
 import java.util.List;
 
 public abstract class NumberGenerator {
-    private final List<Observer> observers = new ArrayList<>();        // Observer‚½‚¿‚ğ•Û
+    private final List<Observer> observers = new ArrayList<>();        // ObserverãŸã¡ã‚’ä¿æŒ
 
-    public void addObserver(Observer observer) {    // Observer‚ğ’Ç‰Á
+    public void addObserver(Observer observer) {    // Observerã‚’è¿½åŠ 
         observers.add(observer);
     }
 
-    public void deleteObserver(Observer observer) { // Observer‚ğíœ
+    public void deleteObserver(Observer observer) { // Observerã‚’å‰Šé™¤
         observers.remove(observer);
     }
 
-    public void notifyObservers() {               // Observer‚Ö’Ê’m
+    public void notifyObservers() {               // Observerã¸é€šçŸ¥
 
         for (var observer : observers) {
             observer.update(this);
         }
     }
 
-    public abstract int getNumber();                // ”‚ğæ“¾‚·‚é
+    public abstract int getNumber();                // æ•°ã‚’å–å¾—ã™ã‚‹
 
-    public abstract void execute();                 // ”‚ğ¶¬‚·‚é
+    public abstract void execute();                 // æ•°ã‚’ç”Ÿæˆã™ã‚‹
 }

@@ -4,7 +4,7 @@ package jp.ne.yonem.pattern.AbstractFactory.Sample;
 import jp.ne.yonem.pattern.AbstractFactory.Sample.factory.Factory;
 
 public class Main {
-    
+
     public static void main(String[] args) {
 
         if (args.length != 1) {
@@ -36,7 +36,7 @@ public class Main {
         traysearch.add(excite);
         traysearch.add(google);
 
-        var page = factory.createPage("LinkPage", "結城 浩");
+        var page = factory.createPage("LinkPage", "蛇場　太郎");
         page.add(traynews);
         page.add(traysearch);
         page.output();

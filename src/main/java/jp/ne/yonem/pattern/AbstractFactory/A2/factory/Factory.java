@@ -24,8 +24,12 @@ public abstract class Factory {
     public abstract Page createPage(String title, String author);
 
     public Page createYahooPage() {
+        return createYahooPage("no suffix");
+    }
+
+    public Page createYahooPage(String suffix) {
         var link = createLink("Yahoo!", "http://www.yahoo.com/");
-        var page = createPage("Yahoo!", "Yahoo!");
+        var page = createPage("Yahoo! - " + suffix, "Yahoo!");
         page.add(link);
         return page;
     }

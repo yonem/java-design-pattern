@@ -1,8 +1,7 @@
-package jp.ne.yonem.pattern.AbstractFactory.Sample.factory;
+package jp.ne.yonem.pattern.AbstractFactory.A2.factory;
 
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.Writer;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,10 +21,9 @@ public abstract class Page {
     }
 
     public void output() {
+        var filename = title + ".html";
 
-        try {
-            var filename = title + ".html";
-            Writer writer = new FileWriter(filename);
+        try (var writer = new FileWriter(filename)) {
             writer.write(this.makeHTML());
             writer.close();
             System.out.println(filename + " を作成しました。");

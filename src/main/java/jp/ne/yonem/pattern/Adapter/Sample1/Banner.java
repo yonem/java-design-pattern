@@ -1,6 +1,7 @@
 package jp.ne.yonem.pattern.Adapter.Sample1;
 
 public class Banner {
+
     private final String string;
 
     public Banner(String string) {

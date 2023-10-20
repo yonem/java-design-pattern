@@ -1,9 +1,12 @@
 package jp.ne.yonem.pattern.Adapter.A2;
 
-import java.io.*;
-import java.util.*;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.Properties;
 
 public class FileProperties extends Properties implements FileIO {
+
     public void readFromFile(String filename) throws IOException {
         load(new FileInputStream(filename));
     }

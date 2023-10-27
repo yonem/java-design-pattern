@@ -1,8 +1,13 @@
 package jp.ne.yonem.pattern.Bridge.Sample;
 
-public class Main {
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 
-    public static void main(String[] args) {
+class MainTest {
+
+    @Test
+    @DisplayName("Output Hello")
+    void test1() {
         var d1 = new Display(new StringDisplayImpl("Hello, Japan."));
         var d2 = new CountDisplay(new StringDisplayImpl("Hello, World."));
         var d3 = new CountDisplay(new StringDisplayImpl("Hello, Universe."));

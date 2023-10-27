@@ -1,4 +1,4 @@
-package jp.ne.yonem.pattern.Bridge.Sample;
+package jp.ne.yonem.pattern.Bridge.A3;
 
 public class CountDisplay extends Display {
 

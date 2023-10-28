@@ -1,7 +1,7 @@
-package jp.ne.yonem.pattern.Builder.Sample;
+package jp.ne.yonem.pattern.Builder.A3;
 
 public class Director {
-
+    
     private final Builder builder;
 
     public Director(Builder builder) {      // Builderのサブクラスのインスタンスが与えられるので、

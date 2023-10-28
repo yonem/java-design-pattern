@@ -28,6 +28,6 @@ public class TextBuilder extends Builder {
     }
 
     public String getResult() {                                     // 完成した文書
-        return buffer.toString();                                   // StringBufferをStringに変換
+        return buffer.toString();                             // StringBufferをStringに変換
     }
 }

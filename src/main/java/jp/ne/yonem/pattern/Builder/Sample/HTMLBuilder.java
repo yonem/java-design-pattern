@@ -28,10 +28,7 @@ public class HTMLBuilder extends Builder {
 
     public void makeItems(String[] items) { // HTMLファイルでの箇条書き
         writer.println("<ul>"); // <ul>と<li>で出力
-
-        for (String item : items) {
-            writer.println("<li>" + item + "</li>");
-        }
+        for (var item : items) writer.println("<li>" + item + "</li>");
         writer.println("</ul>");
     }
 

@@ -1,4 +1,4 @@
-package jp.ne.yonem.pattern.Builder.Sample;
+package jp.ne.yonem.pattern.Builder.A2;
 
 public class Director {
 

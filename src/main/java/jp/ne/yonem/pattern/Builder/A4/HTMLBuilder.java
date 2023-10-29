@@ -10,7 +10,7 @@ public class HTMLBuilder extends Builder {
     private PrintWriter writer;                                                  // ファイルに書き込むPrintWriter
 
     public void makeTitle(String title) {                                        // HTMLファイルでのタイトル
-        filename = "src/Builder/A4/" + title + ".html";                          // タイトルを元にファイル名決定
+        filename = title + ".html";                                              // タイトルを元にファイル名決定
 
         try {
             writer = new PrintWriter(new FileWriter(filename));                  // PrintWriterを作る

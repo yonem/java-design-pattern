@@ -1,26 +1,26 @@
 package jp.ne.yonem.pattern.Builder.A4;
 
 public class Director {
-    
+
     private final Builder builder;
 
-    public Director(Builder builder) {      // Builder‚ÌƒTƒuƒNƒ‰ƒX‚ÌƒCƒ“ƒXƒ^ƒ“ƒX‚ª—^‚¦‚ç‚ê‚é‚Ì‚ÅA
-        this.builder = builder;             // builderƒtƒB[ƒ‹ƒh‚É•Û‚µ‚Ä‚¨‚­B
+    public Director(Builder builder) {      // Builderã®ã‚µãƒ–ã‚¯ãƒ©ã‚¹ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ãŒä¸ãˆã‚‰ã‚Œã‚‹ã®ã§ã€
+        this.builder = builder;             // builderãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã«ä¿æŒã—ã¦ãŠãã€‚
     }
 
-    public void construct() {             // •¶‘\’z
-        builder.makeTitle("Greeting");              // ƒ^ƒCƒgƒ‹
-        builder.makeString("’©‚©‚ç’‹‚É‚©‚¯‚Ä");     // •¶š—ñ
-        builder.makeItems(new String[]{             // ‰Óğ‘‚«
-                "‚¨‚Í‚æ‚¤‚²‚´‚¢‚Ü‚·B",
-                "‚±‚ñ‚É‚¿‚ÍB",
+    public void construct() {                       // æ–‡æ›¸æ§‹ç¯‰
+        builder.makeTitle("Greeting");              // ã‚¿ã‚¤ãƒˆãƒ«
+        builder.makeString("æœã‹ã‚‰æ˜¼ã«ã‹ã‘ã¦");        // æ–‡å­—åˆ—
+        builder.makeItems(new String[]{             // ç®‡æ¡æ›¸ã
+                "ãŠã¯ã‚ˆã†ã”ã–ã„ã¾ã™ã€‚",
+                "ã“ã‚“ã«ã¡ã¯ã€‚",
         });
-        builder.makeString("–é‚É");                 // •Ê‚Ì•¶š—ñ
-        builder.makeItems(new String[]{             // •Ê‚Ì‰Óğ‘‚«
-                "‚±‚ñ‚Î‚ñ‚ÍB",
-                "‚¨‚â‚·‚İ‚È‚³‚¢B",
-                "‚³‚æ‚¤‚È‚çB",
+        builder.makeString("å¤œã«");                  // åˆ¥ã®æ–‡å­—åˆ—
+        builder.makeItems(new String[]{             // åˆ¥ã®ç®‡æ¡æ›¸ã
+                "ã“ã‚“ã°ã‚“ã¯ã€‚",
+                "ãŠã‚„ã™ã¿ãªã•ã„ã€‚",
+                "ã•ã‚ˆã†ãªã‚‰ã€‚",
         });
-        builder.close();                 // •¶‘‚ğŠ®¬‚³‚¹‚é
+        builder.close();                            // æ–‡æ›¸ã‚’å®Œæˆã•ã›ã‚‹
     }
 }

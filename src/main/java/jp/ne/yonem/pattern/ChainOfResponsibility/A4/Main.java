@@ -1,4 +1,4 @@
-package jp.ne.yonem.pattern.ChainOfResponsibility.Sample;
+package jp.ne.yonem.pattern.ChainOfResponsibility.A4;
 
 public class Main {
 

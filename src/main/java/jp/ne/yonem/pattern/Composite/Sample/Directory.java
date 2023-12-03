@@ -3,6 +3,7 @@ package jp.ne.yonem.pattern.Composite.Sample;
 import java.util.ArrayList;
 
 public class Directory extends Entry {
+    
     private final String name; // ディレクトリの名前
     private final ArrayList<Entry> directory = new ArrayList<>(); // ディレクトリエントリの集合
 

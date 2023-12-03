@@ -1,6 +1,7 @@
 package jp.ne.yonem.pattern.Composite.Sample;
 
 public abstract class Entry {
+    
     public abstract String getName();                               // 名前を得る
 
     public abstract int getSize();                                  // サイズを得る

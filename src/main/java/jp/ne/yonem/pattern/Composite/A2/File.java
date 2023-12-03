@@ -1,7 +1,7 @@
-package jp.ne.yonem.pattern.Composite.Sample;
+package jp.ne.yonem.pattern.Composite.A2;
 
 public class File extends Entry {
-    
+
     private final String name;
     private final int size;
 

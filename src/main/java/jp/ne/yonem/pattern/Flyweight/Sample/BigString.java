@@ -17,9 +17,6 @@ public class BigString {
 
     // 表示
     public void print() {
-
-        for (var bigchar : bigChars) {
-            bigchar.print();
-        }
+        for (var bigchar : bigChars) bigchar.print();
     }
 }

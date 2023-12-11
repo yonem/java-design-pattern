@@ -4,6 +4,7 @@ package jp.ne.yonem.pattern.FactoryMethod.Sample.idcard;
 import jp.ne.yonem.pattern.FactoryMethod.Sample.framework.Product;
 
 public class IDCard extends Product {
+
     private final String owner;
 
     IDCard(String owner) {

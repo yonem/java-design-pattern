@@ -3,7 +3,7 @@ package jp.ne.yonem.pattern.FactoryMethod.Sample.framework;
 public abstract class Factory {
 
     public final Product create(String owner) {
-        Product p = createProduct(owner);
+        var p = createProduct(owner);
         registerProduct(p);
         return p;
     }

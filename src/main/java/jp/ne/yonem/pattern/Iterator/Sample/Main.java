@@ -9,8 +9,8 @@ public class Main {
         bookShelf.appendBook(new Book("Cinderella"));
         bookShelf.appendBook(new Book("Daddy-Long-Legs"));
 
-        for (Iterator it = bookShelf.iterator(); it.hasNext(); ) {
-            var book = (Book) it.next();
+        for (var it = bookShelf.iterator(); it.hasNext(); ) {
+            var book = it.next();
             System.out.println(book.name());
 
             if (!it.hasNext()) {

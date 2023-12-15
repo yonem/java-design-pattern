@@ -13,7 +13,7 @@ public class BookShelfIterator implements Iterator {
         return index < bookShelf.getLength();
     }
 
-    public Object next() {
+    public Book next() {
         var book = bookShelf.getBookAt(index);
         index++;
         return book;

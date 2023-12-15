@@ -13,8 +13,8 @@ public class Main {
         bookShelf.appendBook(new Book("Gulliver's Travels"));
         bookShelf.appendBook(new Book("Hamlet"));
 
-        for (Iterator it = bookShelf.iterator(); it.hasNext(); ) {
-            var book = (Book) it.next();
+        for (var it = bookShelf.iterator(); it.hasNext(); ) {
+            var book = it.next();
             System.out.println(book.name());
         }
     }

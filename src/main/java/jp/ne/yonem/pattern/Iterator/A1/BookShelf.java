@@ -3,6 +3,7 @@ package jp.ne.yonem.pattern.Iterator.A1;
 import java.util.ArrayList;
 
 public class BookShelf implements Aggregate {
+    
     private final ArrayList<Book> books;
 
     public BookShelf(int initialize) {

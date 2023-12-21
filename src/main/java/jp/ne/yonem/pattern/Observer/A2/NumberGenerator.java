@@ -1,4 +1,4 @@
-package jp.ne.yonem.pattern.Observer.Sample;
+package jp.ne.yonem.pattern.Observer.A2;
 
 import java.util.ArrayList;
 import java.util.List;

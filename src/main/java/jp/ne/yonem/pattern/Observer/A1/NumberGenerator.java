@@ -1,9 +1,10 @@
-package jp.ne.yonem.pattern.Observer.Sample;
+package jp.ne.yonem.pattern.Observer.A1;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public abstract class NumberGenerator {
+
     private final List<Observer> observers = new ArrayList<>();        // Observerたちを保持
 
     public void addObserver(Observer observer) {    // Observerを追加

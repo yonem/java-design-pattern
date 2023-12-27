@@ -1,8 +1,13 @@
 package jp.ne.yonem.pattern.Singleton.Sample;
 
-public class Main {
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 
-    public static void main(String[] args) {
+class MainTest {
+
+    @Test
+    @DisplayName("Singleton")
+    void test1() {
         System.out.println("Start.");
         var obj1 = Singleton.getInstance();
         var obj2 = Singleton.getInstance();

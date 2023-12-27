@@ -1,6 +1,7 @@
 package jp.ne.yonem.pattern.Singleton.A3_1;
 
 public class Singleton {
+
     private static Singleton singleton = null;
 
     private Singleton() {
@@ -9,9 +10,7 @@ public class Singleton {
     }
 
     public static Singleton getInstance() {
-        if (singleton == null) {
-            singleton = new Singleton();
-        }
+        if (singleton == null) singleton = new Singleton();
         return singleton;
     }
 

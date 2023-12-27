@@ -9,6 +9,7 @@ public class Main {
 
         if (obj1 == obj2) {
             System.out.println("obj1とobj2は同じインスタンスです。");
+            
         } else {
             System.out.println("obj1とobj2は同じインスタンスではありません。");
         }

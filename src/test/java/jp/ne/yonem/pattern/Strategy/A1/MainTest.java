@@ -1,16 +1,17 @@
 package jp.ne.yonem.pattern.Strategy.A1;
 
-public class Main {
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 
-    public static void main(String[] args) {
+class MainTest {
 
-        if (args.length != 2) {
-            System.out.println("Usage: java Main randomseed1 randomseed2");
-            System.out.println("Example: java Main 314 15");
-            System.exit(0);
-        }
-        var seed1 = Integer.parseInt(args[0]);
-        var seed2 = Integer.parseInt(args[1]);
+    @Test
+    @DisplayName("Strategy")
+    void test1() {
+//            Usage: java Main randomSeed1 randomSeed2
+//            Example: java Main 314 15
+        var seed1 = 223;
+        var seed2 = 43;
         var player1 = new Player("Taro", new ProbStrategy(seed1));
         var player2 = new Player("Hana", new RandomStrategy(seed2));
 

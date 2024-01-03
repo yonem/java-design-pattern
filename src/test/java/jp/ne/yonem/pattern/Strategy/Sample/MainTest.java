@@ -1,18 +1,19 @@
-package jp.ne.yonem.pattern.Strategy.A1;
+package jp.ne.yonem.pattern.Strategy.Sample;
 
-public class Main {
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 
-    public static void main(String[] args) {
+class MainTest {
 
-        if (args.length != 2) {
-            System.out.println("Usage: java Main randomseed1 randomseed2");
-            System.out.println("Example: java Main 314 15");
-            System.exit(0);
-        }
-        var seed1 = Integer.parseInt(args[0]);
-        var seed2 = Integer.parseInt(args[1]);
-        var player1 = new Player("Taro", new ProbStrategy(seed1));
-        var player2 = new Player("Hana", new RandomStrategy(seed2));
+    @Test
+    @DisplayName("Strategy")
+    void test1() {
+//            Usage: java Main randomSeed1 randomSeed2
+//            Example: java Main 314 15
+        var seed1 = 314;
+        var seed2 = 15;
+        var player1 = new Player("Taro", new WinningStrategy(seed1));
+        var player2 = new Player("Hana", new ProbStrategy(seed2));
 
         for (var i = 0; i < 10_000; i++) {
             var nextHand1 = player1.nextHand();

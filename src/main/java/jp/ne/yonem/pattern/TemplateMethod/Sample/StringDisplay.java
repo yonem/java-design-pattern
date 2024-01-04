@@ -1,6 +1,7 @@
 package jp.ne.yonem.pattern.TemplateMethod.Sample;
 
 public class StringDisplay extends AbstractDisplay {    // StringDisplayも、AbstractDisplayのサブクラス。
+    
     private final String string;                        // 表示するべき文字列。
     private final int width;                            // バイト単位で計算した文字列の「幅」。
 
@@ -24,9 +25,8 @@ public class StringDisplay extends AbstractDisplay {    // StringDisplayも、Ab
     private void printLine() {                          // openとcloseから呼ばれるprintLineメソッドだ。privateなので、このクラスの中だけで使われる。
         System.out.print("+");                          // 枠の角を表現する"+"マークを表示。
 
-        for (int i = 0; i < width; i++) {               // width個の"-"を表示して、
-            System.out.print("-");                      // 枠線として用いる。
-        }
+        // width個の"-"を表示して、枠線として用いる。
+        for (var i = 0; i < width; i++) System.out.print("-");
         System.out.println("+");                        // 枠の角を表現する"+"マークを表示。
     }
 }

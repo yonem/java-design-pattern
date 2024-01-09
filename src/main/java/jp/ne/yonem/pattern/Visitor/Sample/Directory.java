@@ -5,6 +5,7 @@ import java.util.Iterator;
 import java.util.List;
 
 public class Directory extends Entry {
+
     private final String name;                     // ディレクトリの名前
     private final List<Entry> dir = new ArrayList<>(); // ディレクトリエントリの集合
 
@@ -18,10 +19,7 @@ public class Directory extends Entry {
 
     public int getSize() {                   // サイズを得る
         int size = 0;
-
-        for (Entry entry : dir) {
-            size += entry.getSize();
-        }
+        for (Entry entry : dir) size += entry.getSize();
         return size;
     }
 

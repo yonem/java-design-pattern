@@ -1,9 +1,9 @@
-package jp.ne.yonem.pattern.Visitor.Sample;
+package jp.ne.yonem.pattern.Visitor.A3;
 
 import java.util.Iterator;
 
 public abstract class Entry implements Element {
-    
+
     public abstract String getName();                                   // 名前を得る
 
     public abstract int getSize();                                      // サイズを得る
@@ -12,7 +12,7 @@ public abstract class Entry implements Element {
         throw new FileTreatmentException();
     }
 
-    public Iterator<Entry> iterator() throws FileTreatmentException {   // Iteratorの生成
+    public Iterator<Entry> iterator() throws FileTreatmentException {    // Iteratorの生成
         throw new FileTreatmentException();
     }
 
